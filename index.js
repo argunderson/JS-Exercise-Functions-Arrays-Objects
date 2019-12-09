@@ -57,7 +57,7 @@ function makePersonObject(id, name, email) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(obj) {
-  return 'Hello, my name is ${obj.name}';
+  return `Hello, my name is ${obj.name}`;
 }
 
 
@@ -81,7 +81,7 @@ function makeSmartPerson(name) {
       return a + b;
     },
     speak: function() {
-      return 'Hello, my name is ${name}';
+      return `Hello, my name is ${name}`;
     }
   };
 }
@@ -124,7 +124,7 @@ function get3rdCar(inventory) {
   const the3rd = inventory.find((item, index) => {
     return index === 2 // we use 2 because index is zero-based.
   })
-  return `The car is a ${the3rd.car_make} ${the3rd.car_model}`
+  return `The car is a ${the3rd.car_make} ${the3rd.car_model}`;
 }
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -146,7 +146,7 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   const car = inventory[index];
-  return 'This is a ${car.car_make} ${car.car_model}';
+  return `This is a ${car.car_make} ${car.car_model}`;
 }
 
 /**
@@ -162,7 +162,7 @@ function getCarInfoByIndex(inventory, index) {
 */
 function getLastCarInfo(inventory) {
   const car = inventory[inventory.length - 1];
-  return 'This is a ${car.car_make} ${car.car_model}';
+  return `This is a ${car.car_make} ${car.car_model}`;
 }
 
 /**
@@ -180,7 +180,7 @@ function getLastCarInfo(inventory) {
 function getCarInfoById(inventory, id) {
   for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].id === id) {
-      return 'This is a ${inventory[i].car_make} ${inventory[i].car_model}';
+      return `This is a ${inventory[i].car_make} ${inventory[i].car_model}`;
     }
   }
 }
